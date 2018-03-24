@@ -155,6 +155,10 @@ section {
     clear: both; 
   }
 
+  .nav {
+    display: none;
+  }
+
 }
 
 /* 
