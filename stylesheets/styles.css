@@ -117,7 +117,7 @@ section {
 }
 
 .nav {
-  display: block;
+  visibility: visible;
 }
 
 @media print, screen and (max-width: 1020px) {
@@ -144,7 +144,7 @@ section {
   }
 
   .nav {
-    display: hidden;
+    visibility: hidden;
   }
 
 }
@@ -158,9 +158,9 @@ section {
     display: block;
     clear: both; 
   }
-  
+
   .nav {
-  	display: hidden;
+    visibility: hidden;
   }
 
 }
