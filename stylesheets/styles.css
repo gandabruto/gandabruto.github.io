@@ -116,6 +116,10 @@ section {
   width: 700px;
 }
 
+.nav {
+  display: block;
+}
+
 @media print, screen and (max-width: 1020px) {
 
   main {
@@ -160,5 +164,3 @@ section {
   }
 
 }
-
-
