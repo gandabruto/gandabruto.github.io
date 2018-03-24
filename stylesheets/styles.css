@@ -117,6 +117,7 @@ section {
 }
 
 .nav {
+  display: block;
   visibility: visible;
 }
 
@@ -144,6 +145,7 @@ section {
   }
 
   .nav {
+    display: none;
     visibility: hidden;
   }
 
@@ -160,6 +162,7 @@ section {
   }
 
   .nav {
+    display: none;
     visibility: hidden;
   }
 
