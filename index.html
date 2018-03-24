@@ -1,0 +1,21 @@
+---
+layout: default
+title: Home
+---
+
+<div>
+  {% for post in paginator.posts %}
+    <article id="blog" class="f5">
+      <a href="{{ post.url }}" class="navy">
+        <h2 class="mt0 mb2">{{ post.title }}</h2>
+      </a>
+      <h3 class="mt0 mb2 gray i">{{ post.author }}</h3>
+      <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+      [...]</p>
+      <div class="tr">
+        <a href="{{ post.url }}">Ler o resto do artigo &gt;</a>
+      </div>
+      <hr class="mt3 mb3">
+    </article>
+  {% endfor %}
+</div>

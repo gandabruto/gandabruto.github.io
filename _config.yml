@@ -1,0 +1,7 @@
+title:               MV
+tagline:             Jornal popular
+paginate:            20
+baseurl:             ""
+
+permalink:           /:year/:month/:day/:title/
+excerpt_separator:   <!--more-->
