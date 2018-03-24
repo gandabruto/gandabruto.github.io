@@ -1,0 +1,25 @@
+
+<div class="f6 mt4">
+<p>Contacto: <strong>jornalmudardevida [at] gmail.com</strong></p>
+<p>Número de consultas: <strong>674.783</strong>
+<br>
+Última actualização do site: <strong>
+  {% assign m = site.posts[0].date | date: "%-m" %}
+  {{ site.posts[0].date | date: "%-d" }}
+  {% case m %}
+    {% when '1' %}Janeiro
+    {% when '2' %}Fevereiro
+    {% when '3' %}Março
+    {% when '4' %}Abril
+    {% when '5' %}Maio
+    {% when '6' %}Junho
+    {% when '7' %}Julho
+    {% when '8' %}Agosto
+    {% when '9' %}Setembro
+    {% when '10' %}Octubro
+    {% when '11' %}Novembro
+    {% when '12' %}Dezembro
+  {% endcase %}
+  {{ site.posts[0].date | date: "%Y" }}
+</strong></p>
+</div>
