@@ -12,11 +12,13 @@ body {
 }
 
 #post img {
+  width: 100%;
   max-width: 500px;
   border-radius: 4px;  
 }
 
 #blog img {
+  width: 100%;
   max-width: 280px;
   float: left;
   margin: 5px 15px 10px 0;
@@ -130,12 +132,15 @@ section {
   }
 
   #div-logo {
-    background-image: url("/public/mv_logo_flat.png");
     background-repeat: no-repeat;
     width: 400px;
-    height: 80px;
-    margin: 0;
+    height: 100px;
+    margin: 0 0 20px 0;
     padding: 0; 
+  }
+
+  .nav {
+    display: none;
   }
 
 }
