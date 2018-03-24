@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<article id="post" class="f5">
+  <h1 class="navy mt0">{{ page.title }}</h1>
+  <h3 class="mt0 mb4 gray i">{{ page.author }},
+  {% assign m = page.date | date: "%-m" %}
+  {{ page.date | date: "%-d" }}
+  {% case m %}
+    {% when '1' %}Janeiro
+    {% when '2' %}Fevereiro
+    {% when '3' %}Março
+    {% when '4' %}Abril
+    {% when '5' %}Maio
+    {% when '6' %}Junho
+    {% when '7' %}Julho
+    {% when '8' %}Agosto
+    {% when '9' %}Setembro
+    {% when '10' %}Octubro
+    {% when '11' %}Novembro
+    {% when '12' %}Dezembro
+  {% endcase %}
+  {{ page.date | date: "%Y" }}
+  </h3>
+  <div class="mb3">
+    {{ content }}
+  </div>
+  <a href="javascript:window.history.back()">&lt; Voltar</a>
+  <hr class="mt3 mb3">
+</article>
